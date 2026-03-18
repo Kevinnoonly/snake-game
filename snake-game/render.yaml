@@ -1,0 +1,15 @@
+# Render 部署配置
+# 免费部署贪吃蛇游戏服务器
+
+services:
+  - type: web
+    name: snake-game-server
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+    autoDeploy: true
+    # 免费计划：每月 750 小时运行时间
+    # 休眠后首次访问可能需要 30 秒启动

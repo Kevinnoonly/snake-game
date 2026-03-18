@@ -1,0 +1,19 @@
+{
+  "name": "snake-game-server",
+  "version": "1.0.0",
+  "description": "贪吃蛇联网版服务器 - 支持全球排行榜",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["snake", "game", "multiplayer", "leaderboard"],
+  "author": "Kevin",
+  "license": "MIT"
+}
