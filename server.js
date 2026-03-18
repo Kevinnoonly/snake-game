@@ -136,8 +136,8 @@ app.get('/api/health', async (req, res) => {
 
 // 启动服务器
 initDatabase().then(() => {
-    app.listen(PORT, () => {
-        console.log(`🐍 贪吃蛇服务器运行在 http://localhost:${PORT}`);
+    app.listen(PORT, '0.0.0.0', () => {
+        console.log(`🐍 贪吃蛇服务器运行在 http://0.0.0.0:${PORT}`);
         console.log(`💾 数据库模式: ${process.env.DATABASE_URL ? 'PostgreSQL' : '内存模式'}`);
     });
 });
